@@ -1,0 +1,20 @@
+.titleContainer {
+    text-align: center;
+}
+
+.article {
+    text-align: center;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+#line {
+    height: 20px;
+    background-color: black;
+}
+
+#titleName {
+    text-align: center;
+}
