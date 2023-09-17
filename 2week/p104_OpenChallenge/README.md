@@ -11,5 +11,5 @@
 > 그리고 마지막 조건인 관련 정보를 클릭하면 웹 페이지를 새 창이나 탭에 출력하는 링크는 a 태그에 target 속성을 _blank로 설정하여 해결했습니다.
 > 다음은 완성된 웹페이지 사진과 코드 사진입니다.
 
-<img src="./image/p104번.png" width="300" height="400">
-<img src="./image/p104번결과.png" width="300" height="400">
+<img src="./image/p104번.png" width="1000" height="700">
+<img src="./image/p104번결과.png" width="1000" height="700">
