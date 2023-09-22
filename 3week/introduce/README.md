@@ -24,5 +24,5 @@
 
 > 애니메이션에 포함된 코드입니다.
 
-<img src="./image/introduce_style1.png">
-<img src="./image/introduce_style2.png">
+<img src="./images/introduce_style1.png">
+<img src="./images/introduce_style2.png">

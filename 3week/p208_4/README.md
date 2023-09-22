@@ -25,5 +25,5 @@
 
 > 다음은 완성된 웹페이지 사진과 코드 사진입니다.
 
-<img src="./image/p208_4스타일">
-<img src="./image/p208_4웹페이지">
+<img src="./image/p208_4스타일.png">
+<img src="./image/p208_4웹페이지.png">
