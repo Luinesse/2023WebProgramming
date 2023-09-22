@@ -1,0 +1,41 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    display: inline;
+}
+
+.header {
+    background-color: yellow;
+    height: 10%;
+}
+
+.header > p {
+    display: flex;
+    margin: 27px 0px 0px 0px;
+}
+
+.article {
+    background-color: pink;
+    margin: 15px 5px 15px 5px;
+    height: 30%;
+}
+
+.article > div > span > p {
+    margin : 0px 5px 0px 5px;
+}
+
+.footer {
+    background-color: blueviolet;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}

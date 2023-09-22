@@ -1,0 +1,22 @@
+h1 {
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+    color: yellow;
+}
+
+img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+}
+
+img:hover {
+    box-shadow: 2px 2px 2px black,
+                0 0 25px blue,
+                0 0 5px darkblue;
+}

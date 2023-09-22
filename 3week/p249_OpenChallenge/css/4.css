@@ -1,0 +1,40 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+.footer {
+    height: 8%;
+    background-color: blueviolet;
+    clear: both;
+}
+
+.header {
+    height: 20%;
+    background-color: yellow;
+}
+
+.nav {
+    height: 72%;
+    width: 20%;
+    background-color: orange;
+    float: left;
+}
+
+.section {
+    width: 80%;
+    height: 72%;
+    background-color: skyblue;
+    float: left;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

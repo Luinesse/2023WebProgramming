@@ -1,0 +1,14 @@
+@keyframes move {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+p {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+}

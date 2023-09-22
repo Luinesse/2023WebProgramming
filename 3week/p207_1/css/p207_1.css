@@ -1,0 +1,16 @@
+h3 {
+    color: blue;
+    text-align: end;
+}
+
+p {
+    color: purple;
+}
+
+p > span {
+    background-color: aqua;
+}
+
+body {
+    background-color: antiquewhite;
+}

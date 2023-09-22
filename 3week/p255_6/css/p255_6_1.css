@@ -1,0 +1,13 @@
+@keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

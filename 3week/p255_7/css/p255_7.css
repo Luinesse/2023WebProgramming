@@ -1,0 +1,17 @@
+@keyframes big {
+    100% {
+        width: 100%;
+    }
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+img:hover {
+
+    animation-name: big;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+}

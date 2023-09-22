@@ -1,0 +1,21 @@
+ol {
+    list-style-type: none;
+}
+
+div {
+    border: 1px solid brown;
+}
+
+div > h1 {
+    text-align: center;
+}
+
+span {
+    font-size: 30px;
+    color: green;
+    position: absolute;
+}
+
+p {
+    margin-left: 60px;
+}

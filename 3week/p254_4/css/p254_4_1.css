@@ -1,0 +1,12 @@
+li {
+    list-style: square;
+}
+
+li:hover {
+    background-color: yellowgreen;
+}
+
+ul {
+    background-color: aliceblue;
+    padding-right: 10px;
+}

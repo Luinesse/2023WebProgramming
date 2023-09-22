@@ -1,0 +1,22 @@
+.main {
+    background-color: skyblue;
+}
+
+.headline {
+    color: brown;
+    text-align: center;
+    font-size: 2em;
+}
+
+div.help {
+    color: blue;
+}
+
+p.help {
+    color: orange;
+    font-size: 1.5em;
+}
+
+#hot {
+    background-color: orange;
+}

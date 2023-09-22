@@ -1,0 +1,15 @@
+tbody p {
+    border: 1px solid green;
+}
+
+tbody button:hover {
+    color: magenta;
+}
+
+.song {
+    width: 300px;
+}
+
+.song > h3 {
+    border-bottom: 1px solid black;
+}

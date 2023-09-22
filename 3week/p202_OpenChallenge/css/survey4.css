@@ -1,0 +1,44 @@
+h3 {
+    display: inline;
+    color: blue;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+p {
+    font-family: "휴먼편지체";
+    display: inline;
+}
+
+.header+hr {
+    height: 1px;
+}
+
+.header > p {
+    margin-left: 15px;
+}
+
+.article {
+    background-color: pink;
+    margin-bottom: 15px;
+}
+
+.article > div > span > p {
+    margin : 0px 5px 0px 5px;
+}
+
+.article > div > span > h3 {
+    margin-left: 15px;
+}
+
+.footer {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.footer > p {
+    margin-left: 15px;
+}

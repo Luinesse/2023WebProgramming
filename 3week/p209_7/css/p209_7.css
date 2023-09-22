@@ -1,0 +1,13 @@
+.card > img:hover {
+    content: url(https://img.freepik.com/free-vector/seven-of-spades-playing-card-isolated_1308-78341.jpg?w=2000);
+}
+
+.card > img {
+    width: 300px;
+    height: 400px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}

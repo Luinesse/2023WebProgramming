@@ -1,0 +1,12 @@
+li {
+    list-style: square;
+}
+
+li:hover {
+    background-color: yellowgreen;
+}
+
+ul {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/World_Map_blank.PNG/1200px-World_Map_blank.PNG);
+    padding-right: 10px;
+}
