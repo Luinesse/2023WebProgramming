@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do-while과 break</title>
+    <script>
+        function password(n) {
+            do {
+                if(n == "you") {
+                    document.write("통과!");
+                    break;
+                }
+                n = prompt("암호를 대라","");
+            } while(1)
+        }
+    </script>
+</head>
+<body>
+    <h1>암호를 입력하라!</h1>
+    <hr>
+    <script>
+        let pw = prompt("암호를 대라","");
+        password(pw);
+    </script>
+</body>
+</html>

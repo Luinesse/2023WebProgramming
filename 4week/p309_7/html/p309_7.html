@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>큰 자리수와 낮은자리수 같은지 비교</title>
+    <script>
+        function up(n) {
+            let tmp = n % 10;
+            while(n >= 10) {
+                n = Math.floor(n/10);
+            }
+            if(n == tmp)
+                return "성공";
+            else
+                return "다름";
+        }
+    </script>
+</head>
+<body>
+    <h1>큰 자리수와 낮은자리수 같은지 비교</h1>
+    <hr>
+    <script>
+        let a = prompt("숫자 입력", "");
+        document.write(a+":"+up(a));
+    </script>
+</body>
+</html>

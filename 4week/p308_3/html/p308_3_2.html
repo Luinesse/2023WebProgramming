@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document.write()</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>document.write()로 표만들기</h1>");
+        document.write("<hr>");
+        document.write("<table border='1'>");
+        document.write("<tbody>");
+        for(let i = 0; i < 2; i++) {
+            document.write("<tr>");
+            if(i == 0) {
+                document.write("<th>n</th>");
+            } else {
+                document.write("<th>n²</th>");
+            }
+            for(let k = 0; k <= 9; k++) {
+                if(i == 0) {
+                    document.write("<td>"+k+"</td>");
+                } else {
+                    document.write("<td>"+k*k+"</td>");
+                }
+            }
+        }
+        document.write("</tbody>");
+        document.write("</table>");
+    </script>
+</body>
+</html>
