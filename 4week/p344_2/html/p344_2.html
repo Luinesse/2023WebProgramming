@@ -19,12 +19,7 @@
         }
         document.write("<hr>");
         document.write("역순으로 재정렬된 배열<br>");
-        for(let i = 0; i < 5/2; i++) {
-            let tmp = n[i];
-            n[i] = n[4 - i];
-            n[4 - i] = tmp;
-        }
-        for(let i = 0; i < 5; i++) {
+        for(let i = 4; i >= 0; i--) {
             document.write(n[i] + " ");
         }
     </script>
