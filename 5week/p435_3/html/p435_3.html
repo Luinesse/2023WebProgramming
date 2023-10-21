@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeydown</title>
+    <script>
+        function calc(e) {
+            if(e.keyCode == 13) {
+                const exp = document.getElementById("exp");
+                const res = document.getElementById("res");
+                res.value = eval(exp.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요.</p>
+    <span>식<input type="text" id="exp" onkeydown="calc(event)"></span>
+    <br>
+    <span>값<input type="text" id="res" disabled></span>
+</body>
+</html>

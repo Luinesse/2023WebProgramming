@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 클릭 연습</title>
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        td {
+            border: 1px solid blue;
+            width: 50px;
+            height: 50px;
+            padding: 0px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h3>마우스 클릭 연습</h3>
+    <hr>
+    <table id="ten">
+    </table>
+
+    <script>
+        const table = document.getElementById("ten");
+        for(let i = 0; i < 10; i++) {
+            const row = document.createElement("tr");
+            for(let j = 0; j < 10; j++) {
+                const col = document.createElement("td");
+                col.innerHTML = "<img src=''>";
+                row.appendChild(col);
+            }
+            table.appendChild(row);
+        }
+
+        for(let i = 0; i < 100; i++) {
+            document.images[i].style.visibility = "hidden";
+        }
+
+        const i = Math.floor(Math.random() * 100 + 1);
+        document.images[i].src = "https://www.storynory.com/wp-content/uploads/2021/12/donkey-coverart.jpg";
+        document.images[i].style.visibility = "visible";
+
+        randImg();
+
+        function randImg() {
+            for(let k = 0; k < 100; k++) {
+                if(document.images[k].style.visibility == "visible") {
+                    document.images[k].style.visibility = "hidden";
+                    document.images[k].src = "";
+                    break;
+                }
+            }
+
+            const i = Math.floor(Math.random() * 100 + 1);
+            document.images[i].src = "https://www.storynory.com/wp-content/uploads/2021/12/donkey-coverart.jpg";
+            document.images[i].style.visibility = "visible";
+            document.images[i].onclick = randImg;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onwheel</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h3>마우스 휠을 이용한 이미지 확대/축소</h3>
+    <hr>
+    <p>이미지 위에 휠을 위로 굴리면 이미지가 축소되고 아래로 굴리면 이미지가 확대됩니다.</p>
+    <img id="wheel" src="https://previews.123rf.com/images/kriangkrai/kriangkrai1201/kriangkrai120100022/11814961-%EB%85%B8%EB%9E%80-%ED%8A%A4%EB%A6%BD.jpg" alt="꽃" onmousewheel="resize(event)">
+
+    <script>
+        let imgSize = 300;
+        function resize(e) {
+            if(e.wheelDelta < 0) {
+                imgSize -= 3;
+                if(imgSize <= 0)
+                    imgSize = 0;
+            } else {
+                imgSize += 3;
+            }
+
+            const imgData = document.getElementById("wheel");
+            imgData.style.width = imgSize+"px";
+            imgData.style.height = imgSize+"px";
+        }
+    </script>
+</body>
+</html>

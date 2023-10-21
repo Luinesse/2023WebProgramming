@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼과 이미지 출력</title>
+    <style>
+        img {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h3>라디오 버튼을 클릭하면 이미지를 출력합니다.</h3>
+    <hr>
+    <input type="radio" name="btn" value="https://health.chosun.com/site/data/img_dir/2022/05/04/2022050401754_0.jpg" onchange="imgChange()">바나나
+    <input type="radio" name="btn" value="https://t1.daumcdn.net/cfile/tistory/9980A0335A22D4680B" checked onchange="imgChange()">망고
+    <input type="radio" name="btn" value="https://media.istockphoto.com/id/184276818/ko/%EC%82%AC%EC%A7%84/%EB%A0%88%EB%93%9C-%EC%82%AC%EA%B3%BC%EB%82%98%EB%AC%B4.jpg?s=612x612&w=0&k=20&c=qe0XwDHYbQFgVaqM2unXZWVqI7kV2SSfXrCYaHsdmWM=" onchange="imgChange()">사과
+    <br>
+    <img id ="fruit" src="https://t1.daumcdn.net/cfile/tistory/9980A0335A22D4680B" alt="">
+
+    <script>
+        function imgChange() {
+            let tmp = null;
+            const list = document.getElementsByName("btn");
+            for(let i = 0 ; i < list.length; i++) {
+                if(list[i].checked == true) {
+                    tmp = list[i];
+                }
+            }
+            const item = document.getElementById("fruit");
+            item.src = tmp.value;
+        }
+    </script>
+</body>
+</html>

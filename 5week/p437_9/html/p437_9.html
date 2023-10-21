@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover과 onmouseout</title>
+    <style>
+        div {
+            position: absolute;
+            border: 1px solid green;
+            background-color: cadetblue;
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h3>아이템에 마우스를 올리면 설명 출력</h3>
+    <hr>
+    <p>여름 방학 때 하고 싶은 것들</p>
+    <ul>
+        <li id="1">자전거로 대한민국 일주</li>
+        <li id="2">책 100권 읽기</li>
+        <li id="3">철인 3종 경기 준비</li>
+        <li id="4">자바스크립트 정복</li>
+    </ul>
+    <div id="text"></div>
+    <script>
+        const text = ["빨간자전거를 타고 서울, 대전, 대구, 부산 찍고 목포, 인천을 거쳐 달린다",
+                        "코딩책 100권 다 읽기",
+                        "경기를 완주하기 위해 밥잘먹기",
+                        "프로젝트 준비로 자바스크립트 공부"];
+
+        const box = document.getElementById("text");
+        const list = document.getElementsByTagName("li");
+        for(let i = 0; i < list.length; i++) {
+            list[i].onmouseover = over;
+            list[i].onmouseout = hide;
+        }
+
+        function over(e) {
+            let sel = 0;
+            switch(e.target.id) {
+                case "1" :
+                    sel = 1;
+                    break;
+                case "2" :
+                    sel = 2;
+                    break;
+                case "3" :
+                    sel = 3;
+                    break;
+                case "4" :
+                    sel = 4;
+                    break;
+            }
+            box.innerHTML = text[sel - 1];
+            box.style.visibility = "visible";
+            box.style.left = e.x + "px";
+            box.style.top = e.y + "px";
+        }
+
+        function hide() {
+            box.style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

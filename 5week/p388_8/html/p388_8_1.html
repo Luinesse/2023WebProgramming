@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform:rotate()</title>
+</head>
+<body>
+    <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+    <hr>
+    <img id="sponge" src="https://i.namu.wiki/i/izVXkClWRy9-s5DAkC_lGo3za4Zy9seGH1V6AM0qZJzsckE9eWe6-Hp-1OvJm_DkVv7BL7U0Ar7QB89ApaklkQ.webp" alt="스폰지밥" style="width: 300px; height: 500px;">
+    <script>
+        const image = document.getElementById("sponge");
+        let i = 2;
+        image.addEventListener("click", function () {
+            image.style.transform = "scale("+i+",1)";
+            i++;
+        });
+    </script>
+</body>
+</html>
