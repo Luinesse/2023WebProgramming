@@ -1,0 +1,19 @@
+div {
+    display: inline-block;
+    border: 1px solid;
+    border-color: purple;
+    background-color: antiquewhite;
+}
+
+div > h1 {
+    color: blue;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 5px;
+    font-family: "Consolas";
+    font-size: 2em;
+}
+
+#res {
+    display: inline;
+}
