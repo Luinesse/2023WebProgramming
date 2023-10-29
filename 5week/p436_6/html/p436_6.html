@@ -21,11 +21,11 @@
         let imgSize = 300;
         function resize(e) {
             if(e.wheelDelta < 0) {
-                imgSize -= 3;
+                imgSize -= 15;
                 if(imgSize <= 0)
                     imgSize = 0;
             } else {
-                imgSize += 3;
+                imgSize += 15;
             }
 
             const imgData = document.getElementById("wheel");
