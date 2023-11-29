@@ -2,12 +2,12 @@
 
 ## 로그인 화면
 
-<img src="../images/로그인.png">
+<img src="./images/로그인.png">
 
 > Username과 password를 입력하고 Login 버튼을 누르면, function.php에서 유효한지 검사를 거친 후, 유저가 있다면 로그인 처리를 수행합니다.
 > 아래는 로그인이 완료 된 경우입니다.
 
-<img src="../images/로그인완료.png">
+<img src="./images/로그인완료.png">
 
 ## 회원가입
 
@@ -17,7 +17,7 @@
 
 > 회원가입이 정상적으로 확인됐는지 체크하기 위한 데이터베이스 사진입니다.
 
-<img src="../images/데이터베이스 확인.png">
+<img src="./images/데이터베이스 확인.png">
 
 > id값은 primary key로 unique key입니다. Auto increasement로 회원가입 될 때마다 1씩 증가합니다.
 > username과 email은 입력받은대로 삽입되고, user_type은 기본적으로 user 로 저장되지만, 임의로 admin으로 바꾸어 admin 처리를 수행할 수 있습니다.
